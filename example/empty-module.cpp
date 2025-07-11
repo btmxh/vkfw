@@ -33,13 +33,11 @@
 import vkfw;
 import std;
 
-#include <cstdio> // for stderr (macro hence not imported by std)
-
 #define GLAD_GL_IMPLEMENTATION
 #include "glad/gl.h"
 
 static void error_callback(int, const char *description) {
-  std::fprintf(stderr, "Error: %s\n", description);
+  std::cerr << "Error: " << description << '\n';
 }
 
 int main() {
