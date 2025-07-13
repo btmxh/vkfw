@@ -30,11 +30,11 @@
 // Conversion to vkfw (and C++): John Cvelth <cvelth.mail@gmail.com>
 // Minor changes to use C++20 modules: btmxh <ngoduyanh.chip@gmail.com>
 
-import vkfw;
-import std;
-
 #define GLAD_GL_IMPLEMENTATION
 #include "glad/gl.h"
+
+import vkfw;
+import std;
 
 static void error_callback(int, const char *description) {
   std::cerr << "Error: " << description << '\n';
